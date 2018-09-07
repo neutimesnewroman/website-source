@@ -1,0 +1,19 @@
+---
+title: Staff
+---
+
+<div id="picturelist">
+    {% for staff in site.staff %}
+    <div class="picturelistitem">
+        <div class="picture">
+
+        </div>
+        <div class="description">
+
+            <h3><a href="{{ staff.url }}">{{ staff.name }}</a></h3>
+            <p>{{ staff.position }}</p>
+            <p>{{ staff.content | markdownify }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
