@@ -1,12 +1,13 @@
 <html>
 
 <meta charset="utf-8">
-<title>{{ page.title }}</title>
+<title>{{ page.title | flatify }}</title>
 
 <head>
 </head>
 
 <body>
+    {% include navigation.html %}
     <h1>{{ page.title | flatify }}</h1>
     {{ content }}
 </body>

@@ -1,6 +1,9 @@
 ---
 layout: base
 ---
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+{% assign author = site.staff | where: "shortname", page.author | first %}
+
+<p>{{ page.date | date_to_string }}
+    {% if author %} - <a href="{{ author.url }}">{{ author.displayname }}</a>{% endif %}</p>
 
 {{ content }}

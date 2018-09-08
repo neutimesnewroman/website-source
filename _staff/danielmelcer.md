@@ -1,5 +1,5 @@
 ---
-id: dmelcer
+shortname: dmelcer
 displayname: Daniel Melcer
 position: Deputy Head of Communication
 ---

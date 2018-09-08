@@ -12,7 +12,7 @@ title: Staff
 
             <h3><a href="{{ staff.url }}">{{ staff.displayname }}</a></h3>
             <p>{{ staff.position }}</p>
-            <p>{{ staff.content | markdownify }}</p>
+            <p>{{ staff.excerpt | markdownify }}</p>
         </div>
     </div>
     {% endfor %}
