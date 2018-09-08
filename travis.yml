@@ -1,0 +1,15 @@
+Language: ruby
+
+branches:
+  only:
+    - source
+rvm:
+  2.2.3
+
+before_script:
+  - chmod +x ./script/cibuild
+
+script: ./script/cibuild
+
+exclude: [vendor]
+sudo: false
