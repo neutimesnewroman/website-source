@@ -1,4 +1,4 @@
-Language: ruby
+Language: ruby-2.4.4
 
 branches:
   only:
