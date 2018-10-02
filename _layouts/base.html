@@ -9,12 +9,15 @@
 <title>{{ page.title | flatify }}</title>
 
 <head>
+    <link rel="stylesheet" href="/site.css">
 </head>
 
 <body>
-    {% include navigation.html %}
-    <h1>{{ page.title | flatify }}</h1>
-    {{ content }}
+    <div id="content">
+        {% include navigation.html %}
+        <h1>{{ page.title | flatify }}</h1>
+        {{ content }}
+    </div>
 </body>
 
 </html>
