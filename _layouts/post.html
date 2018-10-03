@@ -3,7 +3,13 @@ layout: base
 ---
 {% assign author = site.staff | where: "shortname", page.author | first %}
 
+{% assign issue = site.issues | where: "issuename", page.issue | last %}
+
 <p>{{ page.date | date_to_string }}
     {% if author %} - <a href="{{ author.url }}">{{ author.displayname }}</a>{% endif %}</p>
+
+{% if issue %}
+  <p>Appears in "<a href="{{ issue.url }}">{{ issue.title }}"</a>.</p>
+{% endif %}
 
 {{ content }}

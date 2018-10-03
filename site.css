@@ -9,3 +9,24 @@ body {
     width: 70%;
     padding: 50px;
 }
+
+table, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table tr:first-child {
+    background-color: lightgray;
+}
+
+table tr:nth-child(even){
+    background-color: whitesmoke;
+}
+
+table tr:nth-child(odd){
+    background-color: white;
+}

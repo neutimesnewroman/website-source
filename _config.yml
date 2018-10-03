@@ -1,6 +1,10 @@
 collections:
   staff:
     output: true
+  issues:
+    output: true
+    future: true
+    permalink: "/issues/:year-:month-:name:output_ext"
 
 defaults:
   - scope:

@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+{{ content }}
+
+{% assign articles_in_issue = site.posts | where: "issue", page.issuename | sort: "page" %}
+
+<table>
+    <tr>
+        <th>Article</th>
+        <th>Author</th>
+        <th>Page</th>
+    </tr>
+    {% for post in articles_in_issue %}
+    <tr>
+        {% assign author = site.staff | where: "shortname", post.author | first %}
+        <td>
+            <a href="{{post.url}}">{{post.title}}</a>
+        </td>
+        <td>
+            {{author.displayname}}
+        </td>
+        <td>
+            {{post.page}}
+        </td>
+
+    </tr>
+    {% endfor %}
+
+</table>
