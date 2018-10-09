@@ -30,3 +30,31 @@ table tr:nth-child(even){
 table tr:nth-child(odd){
     background-color: white;
 }
+
+#navbar {
+    background-color: lightgray;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navbar .navitem {
+    float: left;
+    text-align: center;
+}
+
+.navitem a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navitem-selected {
+    background-color: black;
+    color: white;
+}
+
+.navitem-selected a{
+    color: white;
+}
