@@ -5,6 +5,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#666666">
 <meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <title>{{ page.title | flatify }}</title>
 
@@ -13,10 +14,12 @@
 </head>
 
 <body>
-    <div id="content">
+    <div id="container">
         {% include navigation.html %}
-        <h1>{{ page.title | flatify }}</h1>
-        {{ content }}
+        <div id="content">
+            <h1>{{ page.title | flatify }}</h1>
+            {{ content }}
+        </div>
     </div>
 </body>
 

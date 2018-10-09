@@ -1,4 +1,5 @@
 Language: ruby
+cache: bundler
 
 branches:
   only:

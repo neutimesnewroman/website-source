@@ -1,68 +1,73 @@
 body {
-    background-color: black;
+  background-color: #444;
+}
+
+#container {
+  background-color: white;
+  margin: auto;
+  width: 70%;
 }
 
 #content {
-    background-color: white;
-    margin: auto;
-    min-width: 600px;
-    width: 70%;
-    padding: 50px;
+  padding: 10px 50px 50px 50px;
 }
 
-table, th, td {
-    border: 1px solid grey;
-    border-collapse: collapse;
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
 }
 
-th, td {
-    padding: 5px;
+th,
+td {
+  padding: 5px;
 }
 
 table tr:first-child {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
-table tr:nth-child(even){
-    background-color: whitesmoke;
+table tr:nth-child(even) {
+  background-color: whitesmoke;
 }
 
-table tr:nth-child(odd){
-    background-color: white;
+table tr:nth-child(odd) {
+  background-color: white;
 }
 
 #navbar {
-    background-color: #ddd;
-    list-style-type: none;
-    overflow: hidden;
+  background-color: #ddd;
+  list-style-type: none;
+  overflow: hidden;
 }
 
 #navbar .navitem:hover {
-    background-color: #bbb;
+  background-color: #bbb;
 }
 
 #navbar .navitem {
-    float: left;
-    text-align: center;
+  float: left;
+  text-align: center;
 }
 
 #navbar .navitem-selected:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
-.navitem a{
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
+.navitem a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .navitem-selected {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-.navitem-selected a{
-    color: white;
+.navitem-selected a {
+  color: white;
 }
