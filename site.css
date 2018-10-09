@@ -32,14 +32,22 @@ table tr:nth-child(odd){
 }
 
 #navbar {
-    background-color: lightgray;
+    background-color: #ddd;
     list-style-type: none;
     overflow: hidden;
+}
+
+#navbar .navitem:hover {
+    background-color: #bbb;
 }
 
 #navbar .navitem {
     float: left;
     text-align: center;
+}
+
+#navbar .navitem-selected:hover {
+    background-color: #444;
 }
 
 .navitem a{
