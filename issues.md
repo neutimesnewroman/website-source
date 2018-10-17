@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Issues
 ---
 
 <div id="picturelist">

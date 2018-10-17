@@ -1,15 +1,18 @@
 ---
 layout: base
 ---
-{% assign author = site.staff | where: "shortname", page.author | first %}
 
-{% assign issue = site.issues | where: "issuename", page.issue | last %}
+{% assign post = page %}
 
-<p>{{ page.date | date_to_string }}
-    {% if author %} - <a href="{{ author.url }}">{{ author.displayname }}</a>{% endif %}</p>
-
-{% if issue %}
-  <p>Appears in "<a href="{{ issue.url }}">{{ issue.title }}"</a>.</p>
-{% endif %}
+{% include articleinfo.html %}
 
 {{ content }}
+
+<hr>
+
+<h3>Related Articles:</h3>
+
+{% for post in site.related_posts limit:3 %}
+  <h3 class="articletitle"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+   {{ post.excerpt | markdownify }}
+{% endfor %}

@@ -17,7 +17,7 @@ mkdir _site
 git clone https://${GH_TOKEN}@github.com/neutimesnewroman/neutimesnewroman.github.io.git --branch source _site
 
 # build with Jekyll into "_site"
-bundle exec jekyll build
+bundle exec jekyll build --lsi
 
 # push
 cd _site
