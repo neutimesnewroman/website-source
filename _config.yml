@@ -18,6 +18,7 @@ defaults:
     values:
       layout: "staff"
       title: "{{ page.displayname }}"
+      image: "/assets/img/staff/defaultprofile.png"
   - scope:
       path: ""
     values:
