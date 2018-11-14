@@ -155,12 +155,21 @@ table tr:nth-child(odd) {
 .issuecontainer {
     flex: 0 0 auto;
     position: relative;
+  
 }
 
 .issuegridpicture {
     width: 400px;
     filter: none;
     transition: 0.4s;
+
+    @include respond-to(handheld-screens){
+        width: 200px;
+    }
+
+    @include respond-to(medium-screens){
+        width: 300px
+    }
 }
 
 .issuecontainer:hover,
@@ -188,12 +197,12 @@ table tr:nth-child(odd) {
 }
 
 .issueoverlay h6 {
-    margin-top: 30%;
+    margin-top: 20%;
     font-size: 30px;
 }
 
 .issueoverlay p {
-    margin-top: 50%;
+    margin-top: 40%;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 18px;
