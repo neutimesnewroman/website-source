@@ -3,17 +3,16 @@ layout: base
 title: Issues
 ---
 
-<div id="picturelist">
+<div id="issuelayout">
     {% for issue in site.issues %}
-    <div class="picturelistitem">
-        <div class="picture">
-
+        <div class="issuecontainer">
+            <img class="issuegridpicture" src="{{issue.image}}" />
+            <a href="{{ issue.url }}">
+                <div class="issueoverlay">
+                    <h6>{{ issue.title }}</h6>
+                    <p>{{ issue.excerpt | markdownify }}</p>
+                </div>
+            </a>
         </div>
-        <div class="description">
-
-            <h3><a href="{{ issue.url }}">{{ issue.title }}</a></h3>
-            <p>{{ issue.excerpt | markdownify }}</p>
-        </div>
-    </div>
     {% endfor %}
 </div>

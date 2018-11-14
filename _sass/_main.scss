@@ -1,0 +1,200 @@
+@import "variables";
+
+@mixin respond-to($media) {
+    @if $media==handheld-screens {
+        @media only screen and (max-width: $break-small) {
+            @content;
+        }
+    }
+    @else if $media==medium-screens {
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
+            @content;
+        }
+    }
+    @else if $media==wide-screens {
+        @media only screen and (min-width: $break-large) {
+            @content;
+        }
+    }
+}
+
+body {
+    background-color: #444;
+}
+
+#container {
+    background-color: white;
+    margin: auto;
+    width: 70%;
+}
+
+#content {
+    padding: 10px 50px 50px 50px;
+}
+
+.articletitle a:visited {
+    color: black;
+}
+
+.articletitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.articletitle {
+    color: black;
+}
+
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+table tr:first-child {
+    background-color: lightgray;
+}
+
+table tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+#navbar {
+    background-color: #ddd;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navbar .navitem:hover {
+    background-color: #bbb;
+}
+
+#navbar .navitem {
+    float: left;
+    text-align: center;
+}
+
+#navbar .navitem-selected:hover {
+    background-color: #444;
+}
+
+.navitem a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navitem-selected {
+    background-color: black;
+    color: white;
+}
+
+.navitem-selected a {
+    color: white;
+}
+
+.picture {
+    @include respond-to(handheld-screens) {
+        margin: 8px auto;
+        display: flex;
+        justify-content: center;
+    }
+    @include respond-to(medium-screens) {
+        float: left;
+        margin-right: 16px;
+    }
+    @include respond-to(wide-screens) {
+        float: left;
+        margin-right: 16px;
+    }
+}
+
+.description h3 {
+    @include respond-to(handheld-screens) {
+        text-align: center;
+    }
+}
+
+.profilepicture {
+    display: block;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.issuepicture {
+    width: 400px;
+    max-width: 70%;
+}
+
+.picturelistitem {
+    margin-bottom: 2em;
+}
+
+#issuelayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.issuecontainer {
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.issuegridpicture {
+    width: 400px;
+    filter: none;
+    transition: 0.4s;
+}
+
+.issuecontainer:hover,
+.issuecontainer:active {
+    .issuegridpicture {
+        filter: blur(5px) grayscale(0.5) brightness(0.5);
+        transition: 0.4s;
+    }
+    .issueoverlay {
+        visibility: visible;
+        opacity: .8;
+        backdrop-filter: blur(2px);
+    }
+}
+
+.issueoverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.issueoverlay h6 {
+    margin-top: 30%;
+    font-size: 30px;
+}
+
+.issueoverlay p {
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+}

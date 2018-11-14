@@ -2,6 +2,8 @@
 layout: base
 ---
 
+<img class="issuepicture" src="/assets/img/issues/{{ page.issuename }}.png" />
+
 {{ content }}
 
 {% assign articles_in_issue = site.posts | where: "issue", page.issuename | sort: "page" %}
