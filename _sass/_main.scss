@@ -1,5 +1,4 @@
 @import "variables";
-
 @mixin respond-to($media) {
     @if $media==handheld-screens {
         @media only screen and (max-width: $break-small) {
@@ -155,19 +154,16 @@ table tr:nth-child(odd) {
 .issuecontainer {
     flex: 0 0 auto;
     position: relative;
-  
 }
 
 .issuegridpicture {
     width: 400px;
     filter: none;
     transition: 0.4s;
-
-    @include respond-to(handheld-screens){
+    @include respond-to(handheld-screens) {
         width: 200px;
     }
-
-    @include respond-to(medium-screens){
+    @include respond-to(medium-screens) {
         width: 300px
     }
 }
@@ -181,17 +177,36 @@ table tr:nth-child(odd) {
     .issueoverlay {
         visibility: visible;
         opacity: .8;
-        backdrop-filter: blur(2px);
+    }
+    .faketaptarget {
+        display: block;
+    }
+}
+// The fake tap target makes it so that the link is only triggered when tapped a second time,
+// but is clicked on hover the first time
+.faketaptarget:hover,
+.faketaptarget:active{
+    .taptarget{
+        display: block;
     }
 }
 
-.issueoverlay {
+.fulloverlay {
     position: absolute;
     top: 0px;
     left: 0px;
-    opacity: 0;
     height: 100%;
     width: 100%;
+}
+
+.taptarget, .faketaptarget {
+    @extend .fulloverlay;
+    display: none;
+}
+
+.issueoverlay {
+    @extend .fulloverlay;
+    opacity: 0;
     color: white;
     text-align: center;
 }

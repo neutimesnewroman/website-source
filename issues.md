@@ -8,12 +8,15 @@ title: Issues
     {% for issue in issues %}
         <div class="issuecontainer">
             <img class="issuegridpicture" src="{{issue.image}}" />
-            <a href="{{ issue.url }}">
-                <div class="issueoverlay">
-                    <h6>{{ issue.title }}</h6>
-                    <p>{{ issue.excerpt | markdownify }}</p>
-                </div>
-            </a>
+           
+            <div class="issueoverlay">
+                <h6>{{ issue.title }}</h6>
+                <p>{{ issue.excerpt | markdownify }}</p>
+            </div>
+
+            <span class="faketaptarget"> 
+                <a class="taptarget" href="{{ issue.url }}"></a>
+            </span>
         </div>
     {% endfor %}
 </div>
