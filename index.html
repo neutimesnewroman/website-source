@@ -3,6 +3,16 @@ layout: base
 title: Times New Roman
 ---
 
+{% assign recentissue = site.issues | sort: 'date' | reverse | first %}
+
+<h2>View our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a></h2>
+
+<a href="{{recentissue.url}}">
+    <img class="issuepicture" src="{{recentissue.image}}">
+</a>
+
+<hr>
+
 <h2>Recent posts</h2>
 
 {% for post in site.posts limit:5 %}
