@@ -5,7 +5,9 @@ title: Times New Roman
 
 {% assign recentissue = site.issues | sort: 'date' | reverse | first %}
 
-<h2>View our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a></h2>
+<p></p>
+
+<h2>View our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a>:</h2>
 
 <a href="{{recentissue.url}}">
     {% include issuepdforimage.html issue=recentissue %}
