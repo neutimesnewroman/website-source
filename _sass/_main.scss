@@ -135,9 +135,25 @@ table tr:nth-child(odd) {
     border: 2px solid black;
 }
 
-.issuepicture {
+.issuepicture  {
     width: 400px;
     max-width: 70%;
+}
+
+
+.issuepdfcontainer{
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.issuepdf {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
 }
 
 .picturelistitem {
@@ -179,18 +195,13 @@ table tr:nth-child(odd) {
         visibility: visible;
         opacity: .8;
     }
-    .faketaptarget {
+    .taptarget {
         display: block;
     }
 }
 // The fake tap target makes it so that the link is only triggered when tapped a second time,
 // but is clicked on hover the first time
-.faketaptarget:hover,
-.faketaptarget:active{
-    .taptarget{
-        display: block;
-    }
-}
+   
 
 .fulloverlay {
     position: absolute;

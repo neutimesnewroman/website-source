@@ -14,9 +14,7 @@ title: Issues
                 <p>{{ issue.excerpt | markdownify }}</p>
             </div>
 
-            <span class="faketaptarget"> 
-                <a class="taptarget" href="{{ issue.url }}"></a>
-            </span>
+            <a class="taptarget" href="{{ issue.url }}"></a>
         </div>
     {% endfor %}
 </div>
