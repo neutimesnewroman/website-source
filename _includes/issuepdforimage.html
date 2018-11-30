@@ -1,5 +1,13 @@
 {% if include.issue.pdf %}
-{% include issuepdf.html url=include.issue.pdf %}
+<div class="d-none d-md-block">
+    {% include issuepdf.html url=include.issue.pdf %}
+</div>
+<div class="d-md-none">
+    <img class="issuepicture" src="/assets/img/issues/{{ include.issue.issuename }}.png" />
+</div>
+<p></p>
+<a href="{{include.issue.pdf}}">View PDF</a>
+
 {% else %}
 <img class="issuepicture" src="/assets/img/issues/{{ include.issue.issuename }}.png" />
 {% endif %}
