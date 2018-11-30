@@ -2,7 +2,8 @@
 layout: base
 ---
 
-<img class="issuepicture" src="/assets/img/issues/{{ page.issuename }}.png" />
+{% include issuepdforimage.html issue=page %}
+
 
 {{ content }}
 

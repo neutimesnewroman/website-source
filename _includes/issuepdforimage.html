@@ -1,0 +1,5 @@
+{% if include.issue.pdf %}
+{% include issuepdf.html url=include.issue.pdf %}
+{% else %}
+<img class="issuepicture" src="/assets/img/issues/{{ include.issue.issuename }}.png" />
+{% endif %}
