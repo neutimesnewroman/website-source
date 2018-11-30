@@ -1,8 +1,29 @@
-<nav id="navbar">
-    {% for item in site.data.navigation %}
-        
-        <div class="navitem{% if page.url == item.link %} navitem-selected{% endif %}">
-            <a href="{{ item.link }}">{{ item.name }}</a>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand" style="color:#FFFFFF">The Times New Roman</a>
         </div>
-    {% endfor %}
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav">
+                {% for item in site.data.navigation %}
+
+                <li class="nav-item{% if page.url == item.link %} active{% endif %}">
+                    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://twitter.com/neutnr"><img src="logos/twitter_logo_white.png" class="logo"></a>
+                    <a href="https://facebook.com/neutnr"><img src="logos/facebook_logo.png" class="logo"></a>
+                    <a href="https://instagram.com/neutnr"><img src="logos/instagram_logo.png" class="logo"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 </nav>
