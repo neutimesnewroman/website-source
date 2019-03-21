@@ -1,0 +1,14 @@
+---
+title: Videos
+---
+
+{% for vid in site.data.videos %}
+  <h2>{{vid.title}}</h2>
+  {% if forloop.index <= 3 %}
+    <iframe src="https://www.youtube.com/embed/{{vid.ytid}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {% else %}
+    <a href="https://www.youtube.com/watch?v={{vid.ytid}}">
+        <img width="100%" src="https://img.youtube.com/vi/{{vid.ytid}}/sddefault.jpg">
+    </a>
+  {% endif %}
+{% endfor %}
