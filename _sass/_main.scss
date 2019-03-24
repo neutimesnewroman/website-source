@@ -1,21 +1,8 @@
 @import "variables";
-@mixin respond-to($media) {
-    @if $media==handheld-screens {
-        @media only screen and (max-width: $break-small) {
-            @content;
-        }
-    }
-    @else if $media==medium-screens {
-        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) {
-            @content;
-        }
-    }
-    @else if $media==wide-screens {
-        @media only screen and (min-width: $break-large) {
-            @content;
-        }
-    }
-}
+@import "index";
+@import "nav";
+@import "picture_list";
+@import "lib";
 
 body {
     background-color: #444;
@@ -66,72 +53,6 @@ table tr:nth-child(odd) {
     background-color: white;
 }
 
-#navbar {
-    background-color: #ddd;
-    list-style-type: none;
-    overflow: hidden;
-}
-
-#navbar .navitem:hover {
-    background-color: #bbb;
-}
-
-#navbar .navitem {
-    float: left;
-    text-align: center;
-}
-
-#navbar .navitem-selected:hover {
-    background-color: #444;
-}
-
-.navitem a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
-}
-
-.navitem-selected {
-    background-color: black;
-    color: white;
-}
-
-.navitem-selected a {
-    color: white;
-}
-
-.picture {
-    @include respond-to(handheld-screens) {
-        margin: 8px auto;
-        display: flex;
-        justify-content: center;
-    }
-    @include respond-to(medium-screens) {
-        float: left;
-        margin-right: 16px;
-    }
-    @include respond-to(wide-screens) {
-        float: left;
-        margin-right: 16px;
-    }
-}
-
-.description h3 {
-    @include respond-to(handheld-screens) {
-        text-align: center;
-    }
-}
-
-.profilepicture {
-    display: block;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid black;
-}
 
 .issuepicture  {
     width: 400px;
@@ -172,65 +93,15 @@ table tr:nth-child(odd) {
 }
 
 .issuegridpicture {
-    width: 400px;
+    width: 300px;
     filter: none;
     transition: 0.4s;
     @include respond-to(handheld-screens) {
         width: 200px;
     }
     @include respond-to(medium-screens) {
-        width: 300px
+        width: 250px
     }
-}
-
-.issuecontainer:hover,
-.issuecontainer:active {
-    .issuegridpicture {
-        filter: blur(4px) grayscale(0.7) brightness(0.7);
-        transition: 0.4s;
-    }
-    .issueoverlay {
-        visibility: visible;
-        opacity: .8;
-    }
-    .taptarget {
-        display: block;
-    }
-}
-// The fake tap target makes it so that the link is only triggered when tapped a second time,
-// but is clicked on hover the first time
-   
-
-.fulloverlay {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-.taptarget, .faketaptarget {
-    @extend .fulloverlay;
-    display: none;
-}
-
-.issueoverlay {
-    @extend .fulloverlay;
-    opacity: 0;
-    color: white;
-    text-align: center;
-}
-
-.issueoverlay h6 {
-    margin-top: 20%;
-    font-size: 30px;
-}
-
-.issueoverlay p {
-    margin-top: 40%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 18px;
 }
 
 .embed-responsive-17by22 {
@@ -245,4 +116,9 @@ table tr:nth-child(odd) {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+
+.image-large-thumbnail{
+    width:100%;
 }

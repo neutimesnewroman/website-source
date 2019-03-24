@@ -1,0 +1,36 @@
+
+#navbar {
+    background-color: #ddd;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navbar .navitem:hover {
+    background-color: #bbb;
+}
+
+#navbar .navitem {
+    float: left;
+    text-align: center;
+}
+
+#navbar .navitem-selected:hover {
+    background-color: #444;
+}
+
+.navitem a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navitem-selected {
+    background-color: black;
+    color: white;
+}
+
+.navitem-selected a {
+    color: white;
+}

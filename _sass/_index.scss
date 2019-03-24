@@ -1,0 +1,23 @@
+
+.recent-issue-thumbnail-contents-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+%recent-issue-element {
+    margin: 8px;
+}
+
+.recent-issue-contents{
+    @extend %recent-issue-element;
+    flex: 1 1 auto;
+    table{
+        width: 100%;
+    }
+}
+
+.recent-issue-thumbnail{
+    @extend %recent-issue-element;
+    margin: 8px;
+}

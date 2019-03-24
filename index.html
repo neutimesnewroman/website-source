@@ -8,9 +8,15 @@ title: Times New Roman
 <p></p>
 
 <h2>View our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a>:</h2>
-
-    {% include issuepdforimage.html issue=recentissue %}
-
+    <div class="recent-issue-thumbnail-contents-container">
+        <div class="recent-issue-thumbnail">
+            {% include issue_large_thumbnail.html issue=recentissue %}
+        </div>
+        <div class="recent-issue-contents">
+            {% include articles_in_issue.html issue=recentissue %}
+        </div>
+        
+    </div>
 <hr>
 
 <h2>Recent posts</h2>
