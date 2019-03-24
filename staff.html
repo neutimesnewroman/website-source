@@ -2,13 +2,13 @@
 title: Staff
 ---
 
-<div id="picturelist">
+<div id="picture-list">
     {% for staff in site.staff %}
-    <div class="picturelistitem">
-        <div class="picture">
-            <img class="profilepicture" src="{{ staff.image }}" />
+    <div class="picture-list-item">
+        <div class="picture-list-picture">
+            <img class="picture-list-profile-picture" src="{{ staff.image }}" />
         </div>
-        <div class="description">
+        <div class="picture-list-description">
 
             <h3><a href="{{ staff.url }}">{{ staff.displayname }}</a></h3>
             <p>{{ staff.position }}</p>

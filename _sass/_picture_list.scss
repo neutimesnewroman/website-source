@@ -1,6 +1,10 @@
 @import "lib";
 
-.picture {
+.picture-list-item {
+    margin-bottom: 2em;
+}
+
+.picture-list-picture {
     @include respond-to(handheld-screens) {
         margin: 8px auto;
         display: flex;
@@ -16,13 +20,13 @@
     }
 }
 
-.description h3 {
+.picture-list-description h3 {
     @include respond-to(handheld-screens) {
         text-align: center;
     }
 }
 
-.profilepicture {
+.picture-list-profile-picture {
     display: block;
     object-fit: cover;
     width: 100px;
