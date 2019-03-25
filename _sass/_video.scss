@@ -1,0 +1,23 @@
+@import "lib";
+
+.video-embed-container{
+    @extend .full-width;
+    position: relative;
+    padding-top: 56%;
+}
+
+.video-embed{
+    @extend .full-width;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-thumbnail{
+    @extend .full-width;
+}
+
+.video-container{
+    margin-bottom: 8px;
+}

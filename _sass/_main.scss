@@ -5,6 +5,7 @@
 @import "lib";
 @import "issues";
 @import "article";
+@import "video";
 
 body {
   background-color: #444;
@@ -55,6 +56,3 @@ table tr:nth-child(odd) {
   margin-right: 5px;
 }
 
-.image-large-thumbnail {
-  width: 100%;
-}
