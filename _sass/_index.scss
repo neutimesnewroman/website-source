@@ -19,5 +19,6 @@
 
 .recent-issue-thumbnail{
     @extend %recent-issue-element;
+    flex: .2 .2 300px;
     margin: 8px;
 }
