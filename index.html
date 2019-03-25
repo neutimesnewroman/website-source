@@ -15,15 +15,5 @@ title: Times New Roman
 <h2>Recent posts</h2>
 
 {% for post in site.posts limit:5 %}
-<div class="recentpost">
-    <h2 class="articletitle"><a href="{{post.url}}">{{ post.title }}</a></h2>
-
-    {% include article_info.html %}
-
-    {{ post.excerpt | markdownify }}
-
-    {% if forloop.last == false %}
-    <hr>
-    {% endif %}
-</div>
+    {% include article_extended_excerpt.html post=post %}
 {% endfor %}
