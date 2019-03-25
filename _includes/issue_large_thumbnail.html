@@ -1,3 +1,9 @@
-<a href="{{include.issue.url}}">
+{% if include.url %}
+  {% assign url = include.url %}
+{% else %}
+  {% assign url = include.issue.url %}
+{% endif %}
+
+<a href="{{url}}">
     <img alt="{{include.issue.title}}" title="{{include.issue.title}}" class="full-width" src="{{include.issue.image}}" />
 </a>

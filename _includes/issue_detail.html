@@ -1,0 +1,14 @@
+<div class="issue-detail">
+  <div class="issue-detail-pdf-link">
+      <p><a href="{{include.issue.pdf}}">View as PDF</a></p>
+  </div>
+  <div class="issue-detail-thumbnail-contents-container">
+    <div class="issue-detail-thumbnail">
+      {% include issue_large_thumbnail.html issue=include.issue
+      url=include.issue.pdf %}
+    </div>
+    <div class="issue-detail-contents">
+      {% include articles_in_issue.html issue=include.issue %}
+    </div>
+  </div>
+</div>

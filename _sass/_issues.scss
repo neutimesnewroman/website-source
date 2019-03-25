@@ -16,3 +16,27 @@
         width: 250px
     }
 }
+
+.issue-detail-thumbnail-contents-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+%issue-detail-element {
+    margin: 8px;
+}
+
+.issue-detail-contents{
+    @extend %issue-detail-element;
+    flex: 1 1 auto;
+    table{
+        width: 100%;
+    }
+}
+
+.issue-detail-thumbnail{
+    @extend %issue-detail-element;
+    flex: .2 .2 300px;
+    margin: 8px;
+}
