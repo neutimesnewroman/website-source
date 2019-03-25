@@ -4,74 +4,57 @@
 @import "picture_list";
 @import "lib";
 @import "issues";
+@import "article";
 
 body {
-    background-color: #444;
+  background-color: #444;
 }
 
 #container {
-    background-color: white;
+  background-color: white;
 }
 
 #content {
-    padding: 10px 50px 50px 50px;
-}
-
-.articletitle a:visited {
-    color: black;
-}
-
-.articletitle a {
-    text-decoration: none;
-    color: black;
-}
-
-.articletitle {
-    color: black;
+  padding: 10px 50px 50px 50px;
 }
 
 table,
 th,
 td {
-    border: 1px solid grey;
-    border-collapse: collapse;
+  border: 1px solid grey;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    padding: 5px;
+  padding: 5px;
 }
 
 table tr:first-child {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 table tr:nth-child(even) {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 table tr:nth-child(odd) {
-    background-color: white;
+  background-color: white;
 }
-
-
-
 
 .embed-responsive-17by22 {
-    padding-bottom: 129.41%;
+  padding-bottom: 129.41%;
 }
-
 
 .logo {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-
-.image-large-thumbnail{
-    width:100%;
+.image-large-thumbnail {
+  width: 100%;
 }
