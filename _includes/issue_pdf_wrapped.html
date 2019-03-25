@@ -6,5 +6,5 @@
 <a href="{{include.issue.pdf}}">View PDF</a>
 
 {% else %}
-<img class="issuepicture" src="/assets/img/issues/{{ include.issue.issuename }}.png" />
+{% include issue_large_thumbnail.html issue=include.issue %}
 {% endif %}

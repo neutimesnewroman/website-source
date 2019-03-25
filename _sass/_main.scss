@@ -3,6 +3,7 @@
 @import "nav";
 @import "picture_list";
 @import "lib";
+@import "issues";
 
 body {
     background-color: #444;
@@ -54,53 +55,7 @@ table tr:nth-child(odd) {
 }
 
 
-.issuepicture  {
-    width: 400px;
-    max-width: 70%;
-}
 
-
-.issuepdfcontainer{
-    position: relative;
-    padding-bottom: 100%;
-    height: 0;
-    overflow: hidden;
-}
-
-.issuepdf {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-}
-
-
-
-#issuelayout {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.issuecontainer {
-    flex: 0 0 auto;
-    position: relative;
-    margin: 4px;
-}
-
-.issuegridpicture {
-    width: 300px;
-    filter: none;
-    transition: 0.4s;
-    @include respond-to(handheld-screens) {
-        width: 200px;
-    }
-    @include respond-to(medium-screens) {
-        width: 250px
-    }
-}
 
 .embed-responsive-17by22 {
     padding-bottom: 129.41%;

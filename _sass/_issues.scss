@@ -1,0 +1,18 @@
+.issue-grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.issue-grid-picture-container {
+    width: 300px;
+    filter: none;
+    transition: 0.4s;
+    @include respond-to(handheld-screens) {
+        width: 200px;
+    }
+    @include respond-to(medium-screens) {
+        width: 250px
+    }
+}
