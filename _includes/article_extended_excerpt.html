@@ -1,13 +1,13 @@
 {% assign post = include.post %}
 
 <div class="recentpost">
-        <h2 class="articletitle"><a href="{{post.url}}">{{ post.title }}</a></h2>
+    <h3 class="articletitle"><a href="{{post.url}}">{{ post.title }}</a></h3>
     
-        {% include article_info.html %}
+    {% include article_info.html %}
     
-        {{ post.excerpt | markdownify }}
+    {{ post.excerpt | markdownify }}
     
-        {% if forloop.last == false %}
+    {% if forloop.last == false %}
         <hr>
-        {% endif %}
-    </div>
+    {% endif %}
+</div>
