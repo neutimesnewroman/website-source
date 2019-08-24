@@ -3,9 +3,13 @@
 {% assign issue = site.issues | where_exp: "i", "i.issuename == post.issue" | last %}
 
 
-<p>{{ post.date | date_to_string }}
-    {% if author %} - <a href="{{ author.url }}">{{ author.displayname }}</a>{% endif %}</p>
+<p>
+    {{ post.date | date_to_string }}
+    {% if issue %}
+        (<a href="{{ issue.url }}">{{ issue.title }}</a>)
+    {% endif %}
+    {% if author %}
+        - <a href="{{ author.url }}">{{ author.displayname }}</a>
+    {% endif %}
+</p>
 
-{% if issue %}
-  <p>Appears in "<a href="{{ issue.url }}">{{ issue.title }}"</a>.</p>
-{% endif %}
