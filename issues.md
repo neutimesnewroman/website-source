@@ -1,5 +1,6 @@
 ---
 title: Issues
+layout: base
 ---
 
 <div class="issue-grid-layout">

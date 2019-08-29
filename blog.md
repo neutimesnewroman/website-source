@@ -1,10 +1,11 @@
 ---
 title: Blog
+layout: base
 ---
 
 AKA, all the articles that were too bad to be in an issue.
 
-<hr>
+---
 
 {% assign blog_posts = site.posts | sort: 'date' | reverse | where_exp: "i", "i.issue == Nil" %}
 

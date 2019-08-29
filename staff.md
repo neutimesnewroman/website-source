@@ -1,5 +1,6 @@
 ---
 title: Staff
+layout: base
 ---
 
 {% assign eboard = site.staff | where: "group", "eboard" | sort: "positionnumber"  %}

@@ -1,9 +1,12 @@
 ---
 title: Videos
+layout: base
 ---
 
+<!-- Note that this still uses html because of the outer div, markdown doesn't process inside the html tag without making some other things annoying. -->
+
 {% for vid in site.data.videos %}
-  <div class="video-container">
+<div class="video-container">
  
   <h2>{{vid.title}}</h2>
   {% if vid.honors %}
