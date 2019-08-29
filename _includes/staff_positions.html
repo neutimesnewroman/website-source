@@ -1,0 +1,7 @@
+{% assign staff=include.staff %}
+<p>
+    <b>{{ staff.position }}</b>
+    {%- if staff.additional_roles != [] -%}
+    , {{ staff.additional_roles | join: ", " }}
+    {% endif %}
+</p>    

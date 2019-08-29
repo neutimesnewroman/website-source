@@ -4,11 +4,15 @@ layout: base
 
 <h1> {{page.displayname}} </h1>
 
-{{ page.position }}
+{% include staff_positions.html staff=page %}
+
 {{ content }}
 
-<h3>Articles by {{page.displayname}}:</h3>
 {% assign posts_by_author = site.posts | where: "author", page.shortname %}
+
+{% if posts_by_author.size > 0 %}
+<h3>Articles by {{page.displayname}}:</h3>
 {% for post in posts_by_author %}
     <p><a href="{{post.url}}">{{post.title}}</a></p>
 {% endfor %}
+{% endif %}

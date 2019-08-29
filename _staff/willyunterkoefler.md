@@ -1,5 +1,5 @@
 ---
-shortname: willyou
+shortname: willyu
 displayname: Willy Unterkoefler
 position: Head of Communication
 positionnumber: 4
