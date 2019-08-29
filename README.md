@@ -9,6 +9,7 @@
    - After that, run `bundle exec jekyll serve`
 3. When cloning, if you want to also download the submodules (large assets like issues), add `--recursive` to your git clone.
 4. When pulling this repo, if you have the submodules, use this flag: `git pull --recurse-submodules`. If you forget to do that when pulling, you can also do `git submodule update --remote`.
+5. If the website doesn't update within 5 minutes of pushing, check the log on [Travis][5]
 
 ## If you need to recreate the website's build system
 
