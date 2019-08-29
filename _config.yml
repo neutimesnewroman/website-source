@@ -22,4 +22,4 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "base"
+      layout: "base-title"
