@@ -2,9 +2,10 @@
 shortname: jakey
 displayname: Jake Mohamed
 position: King
+positionnumber: 8
 title: The King
 image: https://static1.nutnr.com/img/staff/jakemohamed.jpg
-additional_roles: []
+group: eboard
 ---
 
 Jake Mohamed, The Bearded, First of His Name,

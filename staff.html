@@ -2,18 +2,26 @@
 title: Staff
 ---
 
-<div id="picture-list">
-    {% for staff in site.staff %}
-    <div class="picture-list-item">
-        <div class="picture-list-picture">
-            <img class="picture-list-profile-picture" src="{{ staff.image }}" />
-        </div>
-        <div class="picture-list-description">
+{% assign eboard = site.staff | where: "group", "eboard" | sort: "positionnumber"  %}
+{% assign others = site.staff | where: "group", "other" %}
+{% assign founders = site.staff | where: "group", "founder" %}
 
-            <h3><a href="{{ staff.url }}">{{ staff.displayname }}</a></h3>
-            <p>{{ staff.position }}</p>
-            <p>{{ staff.excerpt | markdownify }}</p>
-        </div>
-    </div>
+<h3 style="margin-bottom:30px">Meet Our Executive Board!</h3>
+    
+    {% for staff in eboard %}
+        {% include staff_box.html staff=staff %}
     {% endfor %}
-</div>
+<hr />
+
+<h3 style="margin-bottom:30px">Meet Some Other People Who Sometimes Show Up!</h3>
+    <div class="row">
+    {% for staff in others %}
+        {% include staff_box.html staff=staff %}
+    {% endfor %} 
+    </div>
+<hr />
+
+<h3 style="margin-bottom:30px">Meet Our Founders</h3>
+    {% for staff in founders %}
+        {% include staff_box.html staff=staff %}
+    {% endfor %} 

@@ -2,8 +2,10 @@
 shortname: dancarr
 displayname: Dan Carr
 position: Editor in Chief
+position_number: 1
 title: The Leader
 image: https://static1.nutnr.com/img/staff/dancarr.jpg
+group: eboard
 additional_roles:
   - Actor
   - Former Child

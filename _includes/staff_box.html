@@ -1,0 +1,22 @@
+{% if staff.group == "eboard" %}
+<div class="row">
+{% endif %}
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="{{ staff.image }}" />
+        <h5><a href="{{ staff.url }}">{{ staff.displayname }}</a></h5>
+        <p>
+            <b>{{ staff.position }}</b>
+            {%- if staff.additional_roles != [] -%}
+            , {{ staff.additional_roles | join: ", " }}
+            {% endif %}
+        </p>
+    </div>
+    {% if staff.group == "eboard" %}
+    <div class="col-lg-5">
+        <h5>{{ staff.title }}</h5>
+        <p>{{ staff.excerpt | markdownify }}</p>
+    </div>
+    {% endif %}
+{% if staff.group == "eboard" %}
+</div>
+{% endif %}

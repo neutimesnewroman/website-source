@@ -2,8 +2,10 @@
 shortname: delaneeeyyyy
 displayname: Delaney Bien
 position: Student Representative
+positionnumber: 7
 title: The Oat Milker
 image: https://static1.nutnr.com/img/staff/delaneybien.jpg
+group: eboard
 additional_roles:
   - Oat Milk Drinker
 ---
