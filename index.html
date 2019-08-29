@@ -5,7 +5,7 @@ title: Times New Roman
 
 {% assign recentissue = site.issues | sort: 'date' | reverse | first %}
 
-<h3>Welcome to Northeastern's Premier Humour Publication</h3>
+<h2>Welcome to Northeastern's Premier Humour Publication</h2>
 
 <p>
     Hello and welcome to Times New Roman, Northeastern's Premier Humor
@@ -40,12 +40,12 @@ title: Times New Roman
 
 <p></p>
 
-<h2>Our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a>:</h2>
+<h3>Our most recent issue, <a href="{{recentissue.url}}">{{ recentissue.title }}</a>:</h3>
    <p>{{recentissue.excerpt}}</p>
    {% include issue_detail.html issue=recentissue %}
 <hr>
 
-<h2>Recent posts</h2>
+<h3>Recent posts</h3>
 
 {% for post in site.posts limit:5 %}
     {% include article_extended_excerpt.html post=post %}
