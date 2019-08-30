@@ -21,5 +21,10 @@ defaults:
       image: "/assets/img/staff/defaultprofile.png"
   - scope:
       path: ""
+      type: "issues"
+    values:
+      layout: "issue"
+  - scope:
+      path: ""
     values:
       layout: "base-title"
