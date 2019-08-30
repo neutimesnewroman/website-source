@@ -6,6 +6,7 @@ layout: base
 {% assign eboard = site.staff | where: "group", "eboard" | sort: "positionnumber"  %}
 {% assign others = site.staff | where: "group", "other" %}
 {% assign founders = site.staff | where: "group", "founder" %}
+{% assign shady = site.staff | where: "group", "shady" | first %}
 
 <h3 style="margin-bottom:30px">Meet Our Executive Board!</h3>
     
@@ -19,6 +20,7 @@ layout: base
     {% for staff in others %}
         {% include staff_box.html staff=staff %}
     {% endfor %} 
+    {% include staff_box.html staff=shady %}
     </div>
 <hr />
 

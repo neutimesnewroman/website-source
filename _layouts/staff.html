@@ -6,6 +6,12 @@ layout: base
 
 {% include staff_positions.html staff=page %}
 
+
+{% if staff.image != "/assets/img/staff/defaultprofile.png" or staff.group == "shady" %}
+<img class="picture-list-profile-picture" src="{{ staff.image }}" />
+<p></p>
+{% endif %}
+
 {{ content }}
 
 {% assign posts_by_author = site.posts | where: "author", page.shortname %}
