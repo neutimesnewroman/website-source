@@ -7,6 +7,7 @@
 
 .issue-grid-picture-container {
     width: 300px;
+    padding: 5px;
     filter: none;
     transition: 0.4s;
     @include respond-to(handheld-screens) {
