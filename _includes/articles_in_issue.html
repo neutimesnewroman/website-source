@@ -1,6 +1,8 @@
 
-{% assign articles_in_issue = site.posts | where: "issue", include.issue.issuename | sort: "page" %}
+{%- assign articles_in_issue = site.posts | where: "issue", include.issue.issuename | sort: "page" -%}
+{%- assign num_articles = articles_in_issue | size -%}
 
+{%- if num_articles > 0 -%}
 <table>
     <tr>
         <th>Article</th>
@@ -24,3 +26,4 @@
     {% endfor %}
 
 </table>
+{%- endif -%}
