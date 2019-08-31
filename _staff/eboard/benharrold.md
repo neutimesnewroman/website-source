@@ -4,7 +4,7 @@ displayname: Ben Harrold
 position: Head of Video
 positionnumber: 5
 title: The Video Guy
-image: https://static1.nutnr.com/img/staff/benharrold.jpg
+image: /assets/static1/img/staff/benharrold.jpg
 group: eboard
 additional_roles:
   - Has a Head

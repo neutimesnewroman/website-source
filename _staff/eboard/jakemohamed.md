@@ -4,7 +4,7 @@ displayname: Jake Mohamed
 position: King
 positionnumber: 8
 title: The King
-image: https://static1.nutnr.com/img/staff/jakemohamed.jpg
+image: /assets/static1/img/staff/jakemohamed.jpg
 group: eboard
 ---
 

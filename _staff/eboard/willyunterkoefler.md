@@ -4,7 +4,7 @@ displayname: Willy Unterkoefler
 position: Head of Communication
 positionnumber: 4
 title: The Communicator
-image: https://static1.nutnr.com/img/staff/willyunterkoefler.jpg
+image: /assets/static1/img/staff/willyunterkoefler.jpg
 group: eboard
 additional_roles:
   - Sort of

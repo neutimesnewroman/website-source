@@ -4,7 +4,7 @@ displayname: Rowan Van Lare
 position: Head of Writing
 positionnumber: 2
 title: The Real Leader
-image: https://static1.nutnr.com/img/staff/rowanvanlare.jpg
+image: /assets/static1/img/staff/rowanvanlare.jpg
 group: eboard
 additional_roles:
   - Former Child Actor

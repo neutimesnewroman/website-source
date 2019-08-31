@@ -5,7 +5,7 @@ layout: base
 
 {% assign eboard = site.staff | where: "group", "eboard" | sort: "positionnumber"  %}
 {% assign others = site.staff | where: "group", "other" %}
-{% assign founders = site.staff | where: "group", "founder" %}
+{% assign founders = site.staff | where: "group", "founder" | sort: "position_number" %}
 {% assign shady = site.staff | where: "group", "shady" | first %}
 
 <h3 style="margin-bottom:30px">Meet Our Executive Board!</h3>
@@ -25,6 +25,13 @@ layout: base
 <hr />
 
 <h3 style="margin-bottom:30px">Meet Our Founders</h3>
+    <div class="row">
     {% for staff in founders %}
         {% include staff_box.html staff=staff %}
     {% endfor %} 
+    </div>
+    <p>Jesus Christ, why are they all men? What year is it? 1908??</p>
+    <p>Excellent quetion. TNR was formed in this century, but it was
+    formed almost entirely by Greg's roommates, whom he dragged to the
+    first meeting. Thus, the embarrassing lack of women. Oh, and also
+    cooties or whatever.</p>
