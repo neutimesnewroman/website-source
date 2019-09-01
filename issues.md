@@ -3,6 +3,10 @@ title: Issues
 layout: base
 ---
 
+## The Archives
+
+Go on. Click one.
+
 <div class="issue-grid-layout">
     {% assign issues = site.issues | sort:'date' | reverse %}
     {% for issue in issues %}

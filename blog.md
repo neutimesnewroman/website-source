@@ -3,7 +3,9 @@ title: Blog
 layout: base
 ---
 
-AKA, all the articles that were too bad to be in an issue.
+## The Blog
+
+AKA all the articles that were too bad to be in an issue.
 
 ---
 
