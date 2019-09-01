@@ -5,7 +5,11 @@
     
     {% include article_info.html %}
     
-    {{ post.excerpt | markdownify }}
+    {% if post.description %}
+        <p>{{ post.description }}</p>
+    {% else %}
+        {{ post.excerpt | markdownify }}
+    {% endif %}
     
     {% if forloop.last == false %}
         <hr>

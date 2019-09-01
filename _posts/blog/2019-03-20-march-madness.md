@@ -1,9 +1,10 @@
 ---
 title: Analyzing Northeastern's March Madness Prospects
 author: willyu
+description: A guest sports enthusiast provides vital insight into the sports
+byline: Willy Unterkoefler, in collaboration with Shannon Foley, guest writer and sports enthusiast
 ---
 
-In collaboration with Shannon Foley, guest writer and sports enthusiast
 
 The Northeastern Huskies Men's Basketball team is doing big things this year and recently earned their spot as a 13 seed in the only NCAA tournament that I actually sort of pay attention to and annually lose money trying to predict. In an effort to help my fellow Huskies try to place smart bets this year on Northeastern's tough match against the infamous Kansas Jayhawks, I reached out to my number one source for all things sports. Here's her prediction. Enjoy!
 
