@@ -3,15 +3,27 @@
 <div class="recentpost">
     <h3 class="articletitle"><a href="{{post.url}}">{{ post.title }}</a></h3>
     
-    {% include article_info.html %}
+    <div class="recentpost-content">
+        {% if post.thumbnail %}
+        <div class="recentpost-content-thumbnail-container">
+            <img class="article-thumbnail-picture" src="{{post.thumbnail}}"/>
+        </div>
+        {% endif %}
+        
+        <div class="recentpost-content-text">
+            
+            {% include article_info.html %}
+            
+            {% if post.description %}
+            <p>{{ post.description }}</p>
+            {% else %}
+            {{ post.excerpt | markdownify }}
+            {% endif %}
+            
+            {% if forloop.last == false %}
+            <hr>
+            {% endif %}
+        </div>
+    </div>
     
-    {% if post.description %}
-        <p>{{ post.description }}</p>
-    {% else %}
-        {{ post.excerpt | markdownify }}
-    {% endif %}
-    
-    {% if forloop.last == false %}
-        <hr>
-    {% endif %}
 </div>

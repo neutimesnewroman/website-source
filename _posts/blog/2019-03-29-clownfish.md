@@ -3,6 +3,7 @@ title: Clownfish
 author: dancarr
 description: Have you ever wondered why clownfish are called clownfish? Do you also watch pornography? Is your life a complete mess? 
 byline: Dan Carr, Marine Biology Pornographist
+thumbnail: /assets/static1/img/blog/thumbnails/clownfish.jpg
 ---
 
 Some of you might know what a clownfish is from 

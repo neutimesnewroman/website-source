@@ -3,6 +3,7 @@ title: Analyzing Northeastern's March Madness Prospects
 author: willyu
 description: A guest sports enthusiast provides vital insight into the sports
 byline: Willy Unterkoefler, in collaboration with Shannon Foley, guest writer and sports enthusiast
+thumbnail: /assets/static1/img/blog/thumbnails/basketball.png
 ---
 
 

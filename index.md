@@ -49,6 +49,8 @@ Enjoy!
 
 ## Recent posts
 
-{% for post in site.posts limit:5 %}
+{% assign blog_posts = site.posts | sort: 'date' | reverse | where_exp: "i", "i.issue == Nil" %}
+
+{% for post in blog_posts limit:5 %}
     {% include article_extended_excerpt.html post=post %}
 {% endfor %}
