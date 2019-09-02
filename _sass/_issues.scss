@@ -7,14 +7,18 @@
 
 .issue-grid-picture-container {
     width: 300px;
+    height: 388px;
+
     padding: 5px;
     filter: none;
     transition: 0.4s;
     @include respond-to(handheld-screens) {
         width: 200px;
+        height: 259px;
     }
     @include respond-to(medium-screens) {
-        width: 250px
+        width: 250px;
+        height: 324px;
     }
 }
 
