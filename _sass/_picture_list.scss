@@ -45,7 +45,7 @@
     flex-wrap: wrap;
 }
 
-.staff-box-spacer {
+.spacer {
     width: 16px;
     height: 0px;
     flex-shrink: 0;
@@ -58,4 +58,14 @@
 .staff-box-right-container {
     flex: 1 1 300px;
     min-width: 300px;
+}
+
+.other-staff-container {
+    margin-bottom:30px;
+}
+
+.other-staff-faces-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
