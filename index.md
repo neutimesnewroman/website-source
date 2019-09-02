@@ -53,4 +53,7 @@ Enjoy!
 
 {% for post in blog_posts limit:5 %}
     {% include article_extended_excerpt.html post=post %}
+
+---
+
 {% endfor %}

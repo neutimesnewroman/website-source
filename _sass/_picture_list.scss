@@ -33,5 +33,39 @@
     height: 250px;
     border-radius: 3%;
     border: 1px solid red;
+    margin-bottom: 8px;
 }
 
+.staff-display-name {
+    margin-bottom: 0px;
+}
+
+.staff-box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacer {
+    width: 16px;
+    height: 0px;
+    flex-shrink: 0;
+}
+
+.staff-box-left-container {
+    flex: 0 0 250px;
+}
+
+.staff-box-right-container {
+    flex: 1 1 300px;
+    min-width: 300px;
+}
+
+.other-staff-container {
+    margin-bottom:30px;
+}
+
+.other-staff-faces-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

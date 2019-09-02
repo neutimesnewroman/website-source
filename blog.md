@@ -15,4 +15,6 @@ AKA all the articles that were too bad to be in an issue.
 
    {% include article_extended_excerpt.html post=post %}
 
+---
+
 {% endfor %}

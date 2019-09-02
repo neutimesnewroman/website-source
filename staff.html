@@ -15,19 +15,21 @@ layout: base
     {% endfor %}
 <hr />
 
-<h3 style="margin-bottom:30px">Meet Some Other People Who Sometimes Show Up!</h3>
-    <div class="row">
+<h3 class="other-staff-container" style="margin-bottom:30px">Meet Some Other People Who Sometimes Show Up!</h3>
+    <div class="other-staff-faces-container">
     {% for staff in others %}
         {% include staff_box.html staff=staff %}
+        <div class="spacer"></div>
     {% endfor %} 
     {% include staff_box.html staff=shady %}
     </div>
 <hr />
 
-<h3 style="margin-bottom:30px">Meet Our Founders</h3>
-    <div class="row">
+<h3 class="other-staff-container">Meet Our Founders</h3>
+    <div class="other-staff-faces-container">
     {% for staff in founders %}
         {% include staff_box.html staff=staff %}
+        <div class="spacer"></div>
     {% endfor %} 
     </div>
     <p>Jesus Christ, why are they all men? What year is it? 1908??</p>
