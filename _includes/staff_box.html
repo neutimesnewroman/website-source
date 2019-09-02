@@ -5,7 +5,7 @@
 {% endif %}
     <div class="col-lg-4">
         <img class="picture-list-profile-picture" src="{{ staff.image }}" />
-        <h5><a href="{{ staff.url }}">{{ staff.displayname }}</a></h5>
+        <h5 class="staff-display-name"><a href="{{ staff.url }}">{{ staff.displayname }}</a></h5>
         {% include staff_positions.html staff=staff %}
     </div>
     {% if staff.group == "eboard" %}
