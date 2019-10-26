@@ -5,6 +5,10 @@ collections:
     output: true
     future: true
     permalink: "/issues/:year-:month-:name:output_ext"
+  videocategories:
+    output: true
+  videos:
+    output: false
 
 defaults:
   - scope:
@@ -28,3 +32,8 @@ defaults:
       path: ""
     values:
       layout: "base-title"
+  - scope:
+      path: ""
+      type: "videocategories"
+    values:
+      layout: "videocategory"

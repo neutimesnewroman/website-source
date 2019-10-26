@@ -3,30 +3,32 @@ title: Videos
 layout: base
 ---
 
-<!-- Note that this still uses html because of the outer div, markdown doesn't process inside the html tag without making some other things annoying. -->
+<div class="video-categories">
 
-{% for vid in site.data.videos %}
-<div class="video-container">
- 
-  <h2>{{vid.title}}</h2>
-  {% if vid.honors %}
-  {% for honor in vid.honors %}
-  <p>{{honor.venue}} - {{honor.award}}</p>
-  {% endfor %}
-  {% endif %}
-  {% if forloop.index <= 4 %}
-    <div class="video-embed-container">
-      <iframe class="video-embed" src="https://www.youtube.com/embed/{{vid.ytid}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  {% else %}
-    <a href="https://www.youtube.com/watch?v={{vid.ytid}}">
-        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/{{vid.ytid}}/sddefault.jpg">
-    </a>
-  {% endif %} 
+{% assign categories = site.videocategories | sort: "order" | reverse %}
 
-  {% if vid.btsid %}
-    (<a href="https://www.youtube.com/watch?v={{vid.btsid}}">Behind the scenes</a>)
-  {% endif %}
 
-  </div>
+{% for category in categories %}
+<div class="video-category">
+  {% assign featured = site.videos | where: "vidid", category.featured | first %}
+  
+    <h2><a href="{{category.url}}">{{category.title}}</a></h2>
+
+   <a href="{{category.url}}">
+   <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/{{featured.ytid}}/sddefault.jpg">
+   </a>
+
+   <p></p>
+   <p></p>
+  
+</div>
 {% endfor %}
+
+{% for i in (1..5) %}
+
+<div class="video-category video-category-filler">
+</div>
+
+{% endfor %}
+
+</div>
