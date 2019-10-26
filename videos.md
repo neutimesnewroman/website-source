@@ -3,7 +3,10 @@ title: Videos
 layout: base
 ---
 
+<div class="video-categories">
+
 {% assign categories = site.videocategories | sort: "order" | reverse %}
+
 
 {% for category in categories %}
 <div class="video-category">
@@ -20,3 +23,12 @@ layout: base
   
 </div>
 {% endfor %}
+
+{% for i in (1..5) %}
+
+<div class="video-category video-category-filler">
+</div>
+
+{% endfor %}
+
+</div>
