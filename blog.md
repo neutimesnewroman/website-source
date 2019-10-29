@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: base
+layout: base-mobile-title
 ---
 
 ## The Blog

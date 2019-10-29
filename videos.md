@@ -1,6 +1,6 @@
 ---
 title: Videos
-layout: base
+layout: base-mobile-title
 ---
 
 <div class="video-categories">
@@ -22,11 +22,13 @@ layout: base
    <p></p>
   
 </div>
+
+
 {% endfor %}
 
 {% for i in (1..5) %}
 
-<div class="video-category video-category-filler">
+<div class="video-category video-category-end-filler">
 </div>
 
 {% endfor %}

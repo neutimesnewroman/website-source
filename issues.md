@@ -1,6 +1,6 @@
 ---
 title: Issues
-layout: base
+layout: base-mobile-title
 ---
 
 ## The Archives

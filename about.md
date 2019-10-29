@@ -1,9 +1,9 @@
 ---
 title: About
-layout: base
+layout: base-mobile-title
 ---
 
-# Who We Are
+## Who We Are
 
 Thank you for reading Times New Roman, Northeastern 
 University’s Premier satire/comedy newspaper, 
@@ -52,7 +52,7 @@ Times New Roman meets every Tuesday at 7 PM in Ryder Hall 296.
 
 ---
 
-# Who Are We?
+## Who Are We?
 
 But, more importantly, why are we?
 What does it all mean? If God put us
@@ -61,18 +61,18 @@ on this Earth, it certainly wasn't for this.
 
 ----
 
-# Are We Who?
+## Are We Who?
 
 Where?
 
 ----
 
-# Who are you?
+## Who are you?
 
 [Who who, who who?](https://en.wikipedia.org/wiki/Who_Are_You_(The_Who_song))
 
 ----
 
-# Whee Hoo Whee Hoo
+## Whee Hoo Whee Hoo
 
 Quick, run! It's the police!
