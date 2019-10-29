@@ -57,3 +57,8 @@ table tr:nth-child(odd) {
   margin-right: 5px;
 }
 
+.small-screens{
+  @media(min-width: $break-small){
+     display: none;
+  }
+}
