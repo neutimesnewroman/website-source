@@ -1,10 +1,10 @@
 ---
 layout: issue
-date: 2017-01-01
-issuename: apocalypse
-title: Apocalypse
-image: /assets/static1/img/issues/Volume3Issue1.jpg
-pdf: /assets/static1/pdf/issues/Volume3Issue1.pdf
+date: 2020-05-20
+issuename: diy
+title: the DIY issue
+image: /assets/static1/img/issues/Volume8Issue1.jpg
+pdf: /assets/static1/pdf/issues/Volume8Issue1.pdf
 ---
 
-Oops.
+the Do it Yourself DIY.
